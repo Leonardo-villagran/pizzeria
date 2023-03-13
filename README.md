@@ -24,6 +24,6 @@ http://localhost:3000/pizzeria
 
 ![https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo01.jpg](https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo01.jpg)
 
-![https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo01.jpg](https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo02.jpg)
+![https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo02.jpg](https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo02.jpg)
 
-![https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo01.jpg](https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo03.jpg)
+![https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo03.jpg](https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo03.jpg)
