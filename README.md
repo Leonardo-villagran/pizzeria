@@ -22,8 +22,8 @@ http://localhost:3000/pizzeria
 
 ## Imágenes de las distintas vistas:
 
-![https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo01.jpg](https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo01.jpg)
+![https://github.com/Leonardo-villagran/pizzeria/blob/main/src/assets/img/ejemplo01.jpg?raw=true](https://github.com/Leonardo-villagran/pizzeria/blob/main/src/assets/img/ejemplo01.jpg?raw=true)
 
-![https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo02.jpg](https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo02.jpg)
+![https://github.com/Leonardo-villagran/pizzeria/blob/main/src/assets/img/ejemplo01.jpg?raw=true](https://github.com/Leonardo-villagran/pizzeria/blob/main/src/assets/img/ejemplo01.jpg?raw=true)
 
-![https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo03.jpg](https://leonardo-villagran.github.io/pizzeria/blob/main/src/assets/img/ejemplo03.jpg)
+!https://github.com/Leonardo-villagran/pizzeria/blob/main/src/assets/img/ejemplo01.jpg?raw=true](https://github.com/Leonardo-villagran/pizzeria/blob/main/src/assets/img/ejemplo01.jpg?raw=true)
