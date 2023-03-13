@@ -1,13 +1,78 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://github.com/Leonardo-villagran/listaPizzas/blob/main/src/assets/img/back2.jpg?raw=true');
+  background-size:cover
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.peque{
+  width: 70%;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.letra{
+  padding: 0px 0px 0px 40px;
+  font-weight: 500;
+
+  margin: 0px 0px 25px 0px;
+  text-align: left;
+}
+a.active{
+ 
+  color:white;
+  font-weight: 500;
+}
+a{
+ 
+  color:white;
+}
+.letra_simple{
+  font-size:30px;
+}
+.izquierda{
+  text-align: left;
+}
+li.izquierdas{
+  padding: 0px 0px 0px 60px;
+  text-align: left;
+}
+.precio{
+  padding: 20px 0px 0px 0px;
+  font-size: larger;
+  text-align: center;
+}
+.jumbotron{
+  /*background-image: url('https://github.com/Leonardo-villagran/listaPizzas/blob/main/src/assets/img/fondo2.jpg?raw=true');*/
+  background-size: cover; 
+  color: white;
+  font-weight: 900;
+}
+.titulo1{
+  padding: 0px 0px 0px 0px;
+}
+.titulo2{
+  padding: 0px 0px 0px 0px;
+}
+
+.fondo{
+  background-color: #17a2b8;
+  color: #FFFFFF;
+}
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.total{
+  font-weight: 500;
+  font-size: 2em;
 }
