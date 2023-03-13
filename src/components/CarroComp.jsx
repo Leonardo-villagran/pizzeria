@@ -4,7 +4,14 @@ import { CiPizza } from "react-icons/ci";
 
 export default function Navigation() {
 
-    const { menu, setMenu, total, option } = useContext(Context);
+    const { menu, setMenu, total } = useContext(Context);
+
+    const option={
+        style: 'decimal',
+        currency: 'CLP',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0}
+        
 
     const aumentarCantidad = (id, cantidad) => {
         const nuevosDatos = menu.map((dato) =>

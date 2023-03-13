@@ -5,7 +5,14 @@ import { CiPizza } from "react-icons/ci";
 
 export default function Navigation() {
     //Desestructuración global de datos.
-    const { menu, setMenu, option } = useContext(Context);
+    const { menu, setMenu } = useContext(Context);
+
+    const option={
+        style: 'decimal',
+        currency: 'CLP',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0}
+        
 
     const navigate = useNavigate();
 

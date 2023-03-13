@@ -6,8 +6,14 @@ import Context from "../Context/Context"
 import React, {  useEffect, useContext } from 'react';
 export default function Navigation() {
 
-  
-  const { menu, total, setTotal, option} = useContext(Context);
+  const option={
+    style: 'decimal',
+    currency: 'CLP',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0}
+    
+
+  const { menu, total, setTotal} = useContext(Context);
 
   function calcularTotal() {
     const totalCalculado = menu.reduce(
@@ -20,7 +26,11 @@ export default function Navigation() {
   useEffect(() => {
     calcularTotal();
   });
- console.log(total);
+  console.log(total);
+
+  let valor=0;
+  if (total) valor=total;
+  else valor=0;
 
   return (
     <>
@@ -33,7 +43,7 @@ export default function Navigation() {
           </Nav>
           <Nav className="justify-content">
             <NavLink to="/carrito" activeclassname="active" className="text-white ms-3 text-decoration-none">
-            <FaShoppingCart />Carro ${total.toLocaleString('es-CL', option)}
+            <FaShoppingCart />Carro ${valor.toLocaleString('es-CL', option)}
             </NavLink>
           </Nav>
         </Container>

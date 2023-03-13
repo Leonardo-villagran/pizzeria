@@ -5,8 +5,15 @@ import { CiPizza } from "react-icons/ci";
 
 export default function Navigation() {
 
-    const { menu, setMenu, option } = useContext(Context);
+    const { menu, setMenu } = useContext(Context);
     const { id } = useParams();
+
+    const option={
+        style: 'decimal',
+        currency: 'CLP',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0}
+        
 
 
     const pizzaSola = menu.filter(num => num.id.toString() === id.toString());

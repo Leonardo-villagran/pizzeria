@@ -14,14 +14,7 @@ function App() {
   const [menuData, setMenuData] = useState([]);
   const [menu, setMenu] = useState([]);
   const [total, setTotal] = useState();
-  const [option, setOption] = useState(
-    {
-    style: 'decimal',
-    currency: 'CLP',
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0}
-    )
-  
+
 
   async function fetchlist() {
         const response = await fetch("https://raw.githubusercontent.com/Leonardo-villagran/listaPizzas/main/lista.json");
@@ -51,7 +44,7 @@ function App() {
   }, [menuData]);
 
   //Generación de la estados globales.
-  const globalState = { menu, setMenu, total, setTotal, option, setOption};
+  const globalState = { menu, setMenu, total, setTotal};
 
   console.log(menu);
   return (
