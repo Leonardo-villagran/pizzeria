@@ -37,12 +37,12 @@ export default function Navigation() {
       <Navbar className="fondo" variant="light">
         <Container className="justify-content-start">
           <Nav className="me-auto">
-          <NavLink to="/" activeclassname="active" className="text-white ms-3 text-decoration-none">
+          <NavLink to="/" className="mi-clase text-white ms-3 text-decoration-none">
               <FaPizzaSlice />Pizzería Mama Mía
             </NavLink>
           </Nav>
           <Nav className="justify-content">
-            <NavLink to="/carrito" activeclassname="active" className="text-white ms-3 text-decoration-none">
+            <NavLink to="/carrito"  className="mi-clase text-white ms-3 text-decoration-none">
             <FaShoppingCart />Carro ${valor.toLocaleString('es-CL', option)}
             </NavLink>
           </Nav>

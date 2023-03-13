@@ -76,3 +76,13 @@ li.izquierdas{
   font-weight: 500;
   font-size: 2em;
 }
+.mi-clase {
+  
+  color: white !important;
+}
+
+.mi-clase.active {
+  
+  font-weight: 500;
+  color: white !important;
+} 
