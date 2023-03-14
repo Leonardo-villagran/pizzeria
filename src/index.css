@@ -76,13 +76,19 @@ li.izquierdas{
   font-weight: 500;
   font-size: 2em;
 }
-.mi-clase {
-  
-  color: white !important;
+.mi-clase{
+  text-decoration: none;
+  color: rgb(241, 239, 239) !important;
+  margin: 0px 10px 0px 0px;
 }
 
-.mi-clase.active {
-  
-  font-weight: 500;
+.active {
   color: white !important;
-} 
+  text-decoration: none;
+  margin: 0px 10px 0px 0px;
+  font-weight: 900;
+}
+
+a {
+  color: white;
+}

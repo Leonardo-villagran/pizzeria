@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Home from "./views/Home";
 import Footer from "./views/Footer";
 import Carro from "./views/Carro";
+import NotFound from "./views/NotFound";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React, { useState, useEffect } from "react";
@@ -56,6 +57,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/carrito" element={<Carro />} />
             <Route path="/pizza/:id" element={<Pizza/>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
         <Footer />

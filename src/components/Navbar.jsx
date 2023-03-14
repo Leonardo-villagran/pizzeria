@@ -32,17 +32,19 @@ export default function Navigation() {
   if (total) valor=total;
   else valor=0;
 
+  const setActiveClass = ({ isActive }) => (isActive ? "active" : "mi-clase");
+
   return (
     <>
       <Navbar className="fondo" variant="light">
         <Container className="justify-content-start">
           <Nav className="me-auto">
-          <NavLink to="/" className="mi-clase text-white ms-3 text-decoration-none">
+          <NavLink to="/"className={setActiveClass} >
               <FaPizzaSlice />Pizzería Mama Mía
             </NavLink>
           </Nav>
           <Nav className="justify-content">
-            <NavLink to="/carrito"  className="mi-clase text-white ms-3 text-decoration-none">
+            <NavLink to="/carrito"  className={setActiveClass} >
             <FaShoppingCart />Carro ${valor.toLocaleString('es-CL', option)}
             </NavLink>
           </Nav>
