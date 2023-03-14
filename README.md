@@ -11,7 +11,6 @@
 * Se genera una nueva matriz para almacenar los datos requeridos de todas las Pizzas y las cantidades seleccionadas.
 
 * Se generan las rutas para utilizar las distintas vistas a través de Browse Router.
-
 ## Nota: 
 
 >En caso de instalar con npm el sistema se carga en la ruta: 

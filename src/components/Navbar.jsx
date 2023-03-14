@@ -6,12 +6,13 @@ import Context from "../Context/Context"
 import React, {  useEffect, useContext } from 'react';
 export default function Navigation() {
 
+  //Constante que define las opciones para pasar un número a latino CLP. 
   const option={
     style: 'decimal',
     currency: 'CLP',
     minimumFractionDigits: 0,
-    maximumFractionDigits: 0}
-    
+    maximumFractionDigits: 0
+  };
 
   const { menu, total, setTotal} = useContext(Context);
 
@@ -21,7 +22,7 @@ export default function Navigation() {
       0
     );
     setTotal(totalCalculado);
-  }
+  };
 
   useEffect(() => {
     calcularTotal();

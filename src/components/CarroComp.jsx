@@ -6,18 +6,19 @@ export default function Navigation() {
 
     const { menu, setMenu, total } = useContext(Context);
 
-    const option={
+    //Constante que define las opciones para pasar un número a latino CLP. 
+    const option = {
         style: 'decimal',
         currency: 'CLP',
         minimumFractionDigits: 0,
-        maximumFractionDigits: 0}
-        
+        maximumFractionDigits: 0
+    };
 
     const aumentarCantidad = (id, cantidad) => {
         const nuevosDatos = menu.map((dato) =>
             dato.id === id ? { ...dato, cantidad: cantidad + 1 } : dato
         );
-        setMenu(nuevosDatos); 
+        setMenu(nuevosDatos);
     }
     const disminuirCantidad = (id, cantidad) => {
         const nuevosDatos = menu.map((dato) =>
@@ -50,24 +51,24 @@ export default function Navigation() {
 
     return (
         <div>
-             <p className='display-6 text-white text-center'>Detalles del pedido:</p>
+            <p className='display-6 text-white text-center'>Detalles del pedido:</p>
             <div className='abs-center'>
                 <div className='card'>
-                <table className='text-center'>
-                    <thead>
-                        <tr>
-                            <th width="20%"></th><th width="40%"></th ><th width="20%"></th><th width="5%"></th ><th width="10%"></th><th width="5%"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {imprimir_carro()}
-                    </tbody>
-                </table>
+                    <table className='text-center'>
+                        <thead>
+                            <tr>
+                                <th width="20%"></th><th width="40%"></th ><th width="20%"></th><th width="5%"></th ><th width="10%"></th><th width="5%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {imprimir_carro()}
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <p className='total text-white text-center'>Total: $ {total.toLocaleString('es-CL', option)}</p>
             <div className='text-center'>
-            <button className="btn btn-success m-2"><span>Ir a pagar</span></button>
+                <button className="btn btn-success m-2"><span>Ir a pagar</span></button>
             </div>
         </div>
     );
