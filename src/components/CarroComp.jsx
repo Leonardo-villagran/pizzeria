@@ -17,15 +17,13 @@ export default function Navigation() {
         const nuevosDatos = menu.map((dato) =>
             dato.id === id ? { ...dato, cantidad: cantidad + 1 } : dato
         );
-        setMenu(nuevosDatos);
-        console.log('Button clicked', id, cantidad);
+        setMenu(nuevosDatos); 
     }
     const disminuirCantidad = (id, cantidad) => {
         const nuevosDatos = menu.map((dato) =>
             dato.id === id ? { ...dato, cantidad: cantidad - 1 } : dato
         );
         setMenu(nuevosDatos);
-        console.log('Button clicked', id, cantidad);
     }
 
     const imprimir_carro = () => {
