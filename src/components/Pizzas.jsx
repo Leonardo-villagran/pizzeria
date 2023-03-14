@@ -13,7 +13,6 @@ export default function Navigation() {
         minimumFractionDigits: 0,
         maximumFractionDigits: 0}
         
-
     const navigate = useNavigate();
 
     const handlePizzaClick = (id) => {
@@ -25,10 +24,8 @@ export default function Navigation() {
             dato.id === id ? { ...dato, cantidad: cantidad + 1 } : dato
         );
         setMenu(nuevosDatos);
-        console.log('Button clicked', id, cantidad);
     };
-
-
+    console.log("Menu: ", menu);
     return (
         <div className="container">
 

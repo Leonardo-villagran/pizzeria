@@ -26,11 +26,6 @@ export default function Navigation() {
   useEffect(() => {
     calcularTotal();
   });
-  console.log(total);
-
-  let valor=0;
-  if (total) valor=total;
-  else valor=0;
 
   const setActiveClass = ({ isActive }) => (isActive ? "active" : "mi-clase");
 
@@ -45,7 +40,7 @@ export default function Navigation() {
           </Nav>
           <Nav className="justify-content">
             <NavLink to="/carrito"  className={setActiveClass} >
-            <FaShoppingCart />Carro ${valor.toLocaleString('es-CL', option)}
+            <FaShoppingCart />Carro ${total.toLocaleString('es-CL', option)}
             </NavLink>
           </Nav>
         </Container>

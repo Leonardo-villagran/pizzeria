@@ -13,8 +13,6 @@ export default function Navigation() {
         currency: 'CLP',
         minimumFractionDigits: 0,
         maximumFractionDigits: 0}
-        
-
 
     const pizzaSola = menu.filter(num => num.id.toString() === id.toString());
 
@@ -23,9 +21,7 @@ export default function Navigation() {
             dato.id === id ? { ...dato, cantidad: cantidad + 1 } : dato
         );
         setMenu(nuevosDatos);
-        console.log('Button clicked', id, cantidad);
     };
-
 
     const imprimir = () => {
         const arreglo =
