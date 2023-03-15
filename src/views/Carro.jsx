@@ -1,6 +1,6 @@
 import CarroComp from "../components/CarroComp.jsx";
 
-export default function Pizza() {
+export default function Carro() {
     return (
         <>
         <CarroComp/>

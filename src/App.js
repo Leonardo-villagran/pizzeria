@@ -53,8 +53,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/carrito" element={<Carro />} />
-            <Route path="/pizza/:id" element={<Pizza/>} />
+            <Route path="/carrito/" element={<Carro />} />
+            <Route path="/pizza/:id/" element={<Pizza/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
