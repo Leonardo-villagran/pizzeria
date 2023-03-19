@@ -7,6 +7,7 @@ export default function Navigation() {
     //Desestructuración global de datos.
     const { menu, setMenu } = useContext(Context);
 
+    //Constante que define las opciones para pasar un número a latino CLP. 
     const option={
         style: 'decimal',
         currency: 'CLP',
@@ -15,37 +16,38 @@ export default function Navigation() {
         
     const navigate = useNavigate();
 
+    //Función para navegar a una pizza en particular en caso de seleccionar una del menú.
     const handlePizzaClick = (id) => {
         navigate(`/pizza/${id}`);
     };
 
+    //Función que permite aumentar la cantidad de pizza seleccionada en 1. 
     const aumenta = (id, cantidad) => {
         const nuevosDatos = menu.map((dato) =>
             dato.id === id ? { ...dato, cantidad: cantidad + 1 } : dato
         );
         setMenu(nuevosDatos);
     };
-    console.log("Menu: ", menu);
     return (
         <div className="container">
 
-            <div className="d-flex flex-wrap justify-content-center">
+            <div className="d-flex flex-wrap justify-content-center ">
                 {menu.map((pizza) => (
-                    <div key={pizza.id} className="col-md-4 p-1">
-                        <div className="card bg bg-white h-100">
+                    <div key={pizza.id} className="col-sm-6 col-md-4 col-lg-3 p-1 ">
+                        <div className="card bg bg-white h-100 ">
                             <img
                                 className="card-img-top"
                                 src={pizza.image_500}
                                 alt={pizza.name}
                             />
-                            <div className="card-body ">
+                            <div className="card-body cardbody">
                                 <h5 className="card-title izquierda ">{pizza.name}</h5>
 
                                 <p className="card-text izquierda">Ingredientes:</p>
                                 <ul className="list-group list-group-flush ">
                                     {pizza.ingredients.map((ingredient) => (
-                                        <li key={ingredient} className="izquierdas list-group-item ">
-                                            <span className='text-warning'><CiPizza/></span>{ingredient}
+                                        <li key={ingredient} className="izquierdas list-unstyled" >
+                                            <span className='text-danger'><CiPizza/></span>{ingredient}
                                         </li>
                                     ))}
                                 </ul>

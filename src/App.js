@@ -12,10 +12,13 @@ import Pizza from "./views/Pizza";
 
 function App() {
 
+  //Generación de estados
   const [menuData, setMenuData] = useState([]);
   const [menu, setMenu] = useState([]);
   const [total, setTotal] = useState(0);
 
+
+  //carga del listado de pizzas desde un Json.
   async function fetchlist() {
         const response = await fetch("https://raw.githubusercontent.com/Leonardo-villagran/listaPizzas/main/lista.json");
         const data = await response.json();
@@ -27,6 +30,7 @@ function App() {
     fetchlist();
   }, []);
 
+  //Generación de estado con la lista de Pizzas agregando la cantidad comprada de un tipo de pizzas, por defecto 0.
   useEffect(() => {
     const nueva = menuData.map((producto) => ({
       id: producto.id,
@@ -38,14 +42,13 @@ function App() {
       description: producto.description,
       ingredients: producto.ingredients,
       cantidad:0,
-      total:0
     }));
     setMenu(nueva);
   }, [menuData]);
 
   //Generación de la estados globales.
   const globalState = { menu, setMenu, total, setTotal};
-
+  console.log("Menu: ", menu);
   return (
     <div>
       <Context.Provider value={globalState}>

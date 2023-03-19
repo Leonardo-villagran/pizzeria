@@ -14,19 +14,21 @@ export default function Navigation() {
         maximumFractionDigits: 0
     };
 
+    //Función que permite aumentar la cantidad de pizza seleccionada en 1. 
     const aumentarCantidad = (id, cantidad) => {
         const nuevosDatos = menu.map((dato) =>
             dato.id === id ? { ...dato, cantidad: cantidad + 1 } : dato
         );
         setMenu(nuevosDatos);
     }
+    //Función que permite disminuir la cantidad de pizza seleccionada en 1. 
     const disminuirCantidad = (id, cantidad) => {
         const nuevosDatos = menu.map((dato) =>
             dato.id === id ? { ...dato, cantidad: cantidad - 1 } : dato
         );
         setMenu(nuevosDatos);
     }
-
+    //Función que imprime los registros de las pizzas seleccionadas y permite aumentar o disminuir la cantidad de pizzas seleccionadas.
     const imprimir_carro = () => {
         const arreglo = menu.map((pizza, index) => (pizza.cantidad > 0 ?
 
@@ -37,7 +39,7 @@ export default function Navigation() {
                     alt={pizza.name}
                 />
                 </td>
-                <td><span className='text-warning'><CiPizza /></span>{pizza.name}</td>
+                <td className='izquierda text-center'><span className='text-warning '><CiPizza /></span>{pizza.name}</td>
 
                 <td>$ {(pizza.price * pizza.cantidad).toLocaleString('es-CL', option)}</td>
                 <td><button className="btn btn-danger m-2" onClick={() => disminuirCantidad(pizza.id, pizza.cantidad)}>-</button> </td>

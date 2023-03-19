@@ -40,15 +40,18 @@ a{
 }
 .izquierda{
   text-align: left;
+  font-weight: 700;
 }
 li.izquierdas{
   padding: 0px 0px 0px 60px;
   text-align: left;
+  
 }
 .precio{
   padding: 20px 0px 0px 0px;
   font-size: larger;
   text-align: center;
+  font-weight: 500;
 }
 .jumbotron{
   /*background-image: url('https://github.com/Leonardo-villagran/listaPizzas/blob/main/src/assets/img/fondo2.jpg?raw=true');*/
@@ -64,7 +67,7 @@ li.izquierdas{
 }
 
 .fondo{
-  background-color: #17a2b8;
+  background-color: #000;
   color: #FFFFFF;
 }
 .abs-center {
@@ -91,4 +94,38 @@ li.izquierdas{
 
 a {
   color: white;
+}
+
+/*.cardbody{
+  background-image: url('https://github.com/Leonardo-villagran/listaPizzas/blob/main/src/assets/img/card.png?raw=true');
+  background-size: cover; 
+}*/
+
+/*Card*/
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card {
+  border-radius: 10px;
+}
+/*.card {
+  background: linear-gradient(to bottom, #ff5f6d, #ffc371);
+}*/
+.card {
+  background: linear-gradient(to bottom, #ff9d00, #ffffff);
+}
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.list-unstyled li {
+  border-bottom: 1px solid #ddd;
+  
+}
+.card{
+  margin: 0px 10px 0px 0px;
 }
