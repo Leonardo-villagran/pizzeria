@@ -17,7 +17,7 @@ http://localhost:3000
 
 ## Acceso web desde (netlify):
 
-[https://64189fe2df97a6041b2dfbed--imaginative-lolly-9c114c.netlify.app/](https://64189fe2df97a6041b2dfbed--imaginative-lolly-9c114c.netlify.app/)
+[https://voluble-boba-ef2ef2.netlify.app/](https://voluble-boba-ef2ef2.netlify.app/)
 
 ## Imágenes de las distintas vistas:
 
