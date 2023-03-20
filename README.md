@@ -6,8 +6,6 @@
 
 * El sistema consiste en una web en la cual se deben seleccionar Pizzas a través de una lista, obtenida desde un Json. 
 
-* El Json se obtiene desde la web, el cual lo he generado yo, pero lo he subido a github, ya que me daba problemas trabajar con el archivo desde la carpeta public. 
-
 * Se genera una nueva matriz para almacenar los datos requeridos de todas las Pizzas y las cantidades seleccionadas.
 
 * Se generan las rutas para utilizar las distintas vistas a través de Browse Router.
