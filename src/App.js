@@ -20,7 +20,8 @@ function App() {
 
   //carga del listado de pizzas desde un Json.
   async function fetchlist() {
-        const response = await fetch("https://raw.githubusercontent.com/Leonardo-villagran/listaPizzas/main/lista.json");
+        //const response = await fetch("https://raw.githubusercontent.com/Leonardo-villagran/listaPizzas/main/lista.json");
+        const response = await fetch(`${process.env.PUBLIC_URL}/lista.json`);
         const data = await response.json();
         setMenuData(data);
     }
