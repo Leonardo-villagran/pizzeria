@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://github.com/Leonardo-villagran/listaPizzas/blob/main/src/assets/img/back2.jpg?raw=true');
+  background-image: url('https://raw.githubusercontent.com/Leonardo-villagran/pizzeria/main/src/assets/img/back2.jpg');
   background-size:cover
 }
 
@@ -54,7 +54,7 @@ li.izquierdas{
   font-weight: 500;
 }
 .jumbotron{
-  /*background-image: url('https://github.com/Leonardo-villagran/listaPizzas/blob/main/src/assets/img/fondo2.jpg?raw=true');*/
+  /*background-image: url('https://raw.githubusercontent.com/Leonardo-villagran/listaPizzas/main/src/assets/img/fondo2.jpg');*/
   background-size: cover; 
   color: white;
   font-weight: 900;
@@ -97,7 +97,7 @@ a {
 }
 
 /*.cardbody{
-  background-image: url('https://github.com/Leonardo-villagran/listaPizzas/blob/main/src/assets/img/card.png?raw=true');
+  background-image: url('https://raw.githubusercontent.com/Leonardo-villagran/listaPizzas/main/src/assets/img/card.png');
   background-size: cover; 
 }*/
 
@@ -115,6 +115,7 @@ a {
 .card {
   background: linear-gradient(to bottom, #ff9d00, #ffffff);
 }
+
 .card {
   transition: transform 0.2s ease-in-out;
 }

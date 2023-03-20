@@ -52,8 +52,12 @@ export default function Navigation() {
                                     ))}
                                 </ul>
                                 <p className="card-text precio">$ {pizza.price.toLocaleString('es-CL', option)}</p>
-                                <button className="btn btn-primary m-2" onClick={() => handlePizzaClick(pizza.id)}>Ver más</button><button onClick={() => aumenta(pizza.id, pizza.cantidad)} className="btn btn-danger m-2">Añadir</button>
+                              
                             </div>
+                            <div className='card-footer border-0 bg-transparent'>
+                            <button className="btn btn-primary m-2" onClick={() => handlePizzaClick(pizza.id)}>Ver más</button><button onClick={() => aumenta(pizza.id, pizza.cantidad)} className="btn btn-danger m-2">Añadir</button>
+                            </div>
+
                         </div>
                     </div>
                 ))}
