@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import Context from "../Context/Context"
 import { useParams } from 'react-router-dom';
 import { CiPizza } from "react-icons/ci";
+import { FaShoppingCart } from "react-icons/fa";
+
 
 export default function Navigation() {
 
@@ -56,7 +58,11 @@ export default function Navigation() {
                                         </li>
                                     ))}
                                 </ul>
-                                <p className="card-text precio">Precio: {pizza.price.toLocaleString('es-CL', option)} <button onClick={() => aumenta(pizza.id, pizza.cantidad)} className="btn btn-danger m-2">Añadir</button></p>
+
+                                <div class="card-body d-flex justify-content-between">
+                                    <p className="card-text precio">Precio: {pizza.price.toLocaleString('es-CL', option)}</p>
+                                    <p> <button onClick={() => aumenta(pizza.id, pizza.cantidad)} className="btn btn-danger m-2">Añadir <FaShoppingCart/></button></p>
+                                </div>
 
                             </div>
                         </div>

@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import Context from "../Context/Context"
 import { useNavigate } from "react-router-dom";
 import { CiPizza } from "react-icons/ci";
+import { AiOutlineEye } from "react-icons/ai";
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function Navigation() {
     //Desestructuración global de datos.
@@ -55,7 +57,7 @@ export default function Navigation() {
                               
                             </div>
                             <div className='card-footer border-0 bg-transparent'>
-                            <button className="btn btn-primary m-2" onClick={() => handlePizzaClick(pizza.id)}>Ver más</button><button onClick={() => aumenta(pizza.id, pizza.cantidad)} className="btn btn-danger m-2">Añadir</button>
+                            <button className="btn btn-primary m-2" onClick={() => handlePizzaClick(pizza.id)}>Ver más <AiOutlineEye/></button><button onClick={() => aumenta(pizza.id, pizza.cantidad)} className="btn btn-danger m-2">Añadir <FaShoppingCart/></button>
                             </div>
 
                         </div>
