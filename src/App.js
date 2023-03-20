@@ -53,7 +53,7 @@ function App() {
   return (
     <div>
       <Context.Provider value={globalState}>
-      <BrowserRouter basename='/pizzeria'>
+      <BrowserRouter>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
