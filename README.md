@@ -4,9 +4,9 @@
 
 ## Características:
 
-* El sistema consiste en una web en la cual se deben seleccionar Pizzas a través de una lista, obtenida desde un Json. 
+* El sistema consiste en una web en la cual se deben seleccionar cantidades de pizzas a través de una lista, obtenida desde un Json. 
 
-* Se genera una nueva matriz para almacenar los datos requeridos de todas las Pizzas y las cantidades seleccionadas.
+* Se genera una nueva matriz para almacenar los datos requeridos de cada pizza y su cantidad asociada.
 
 * Se generan las rutas para utilizar las distintas vistas a través de Browse Router.
 ## Nota: 
