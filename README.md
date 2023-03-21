@@ -21,7 +21,7 @@ http://localhost:3000
 
 ## Acceso web desde (netlify):
 
-[https://voluble-boba-ef2ef2.netlify.app/](https://voluble-boba-ef2ef2.netlify.app/)
+[https://polite-babka-484d6e.netlify.app](https://polite-babka-484d6e.netlify.app)
 
 ## Imágenes de las distintas vistas:
 
