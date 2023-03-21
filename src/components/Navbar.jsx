@@ -14,10 +14,11 @@ export default function Navigation() {
     maximumFractionDigits: 0
   };
 
-  const { menu, total, setTotal} = useContext(Context);
+  const {total, setTotal,seleccionadas} = useContext(Context);
 
   function calcularTotal() {
-    const totalCalculado = menu.reduce(
+
+    const totalCalculado = seleccionadas.reduce(
       (acc, item) => acc + (parseFloat(item.price) ?? 0) * (parseInt(item.cantidad) ?? 0),
       0
     );

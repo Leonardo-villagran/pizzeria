@@ -4,9 +4,13 @@
 
 ## Características:
 
-* El sistema consiste en una web en la cual se deben seleccionar cantidades de pizzas a través de una lista, obtenida desde un Json. 
+* El sistema consiste en una web, en la cual se obtiene una matriz de datos con respecto a Pizzas (id, precios, detalles, imágenes), a través de un archivo Json. 
 
-* Se genera una nueva matriz para almacenar los datos requeridos de cada pizza y su cantidad asociada.
+* Se genera una nueva matriz en el estado llamado seleccionadas, en el cual se almacenan datos de las pizzas donde se ha presionado el botón llamado añadir. 
+
+* La nueva matriz llamada seleccionadas almacena datos como el id, precio, cantidad y una imagen pequeña para ver en el vista del carro. Estos datos se obtienen desde la la matriz original, de un estado llamado menu.
+
+* En el carro se desarrollan los botones para aumentar y disminuir la cantidad de pizzas en 1. En caso de que la cantidad de una pizza llegue a 0, es eliminada de la matriz, en el estado seleccionadas, a través de su id. 
 
 * Se generan las rutas para utilizar las distintas vistas a través de Browse Router.
 ## Nota: 
