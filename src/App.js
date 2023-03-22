@@ -33,8 +33,7 @@ function App() {
 
   //Generación de la estados globales.
   const globalState = { menu, setMenu, total, setTotal,seleccionadas, setSeleccionadas};
-  //console.log("Menu: ", menu);
-  //console.log("Seleccionadas: ", seleccionadas);
+  console.log("Seleccionadas: ", seleccionadas);
   return (
     <div>
       <Context.Provider value={globalState}>

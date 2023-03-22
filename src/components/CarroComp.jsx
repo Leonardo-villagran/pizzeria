@@ -30,21 +30,17 @@ export default function Navigation() {
     };
     //Función que permite disminuir la cantidad de pizza seleccionada en 1. 
     const disminuirCantidad = (id) => {
-        const updatedPizzas = seleccionadas.map(pizza => {
-            if (pizza.id === id) {
-                // Si la pizza existe y la cantidad es mayor a 0, disminuimos la cantidad
-                if (pizza.cantidad > 0) {
-                    return { ...pizza, cantidad: pizza.cantidad - 1 };
-                }
-            }
-            return pizza;
-        });
 
-        // Eliminamos las pizzas que tengan una cantidad igual a 0
-        const filteredPizzas = updatedPizzas.filter(pizza => pizza.cantidad !== 0);
+        const pizzaIndex = seleccionadas.findIndex(pizza => pizza.id === id);
 
-        // Actualizamos el estado de la matriz de pizzas
-        setSeleccionadas(filteredPizzas);
+        if (pizzaIndex >= 0) {
+            const newPizzas = [...seleccionadas];
+            newPizzas[pizzaIndex].cantidad -= 1;
+            // Eliminamos las pizzas que tengan una cantidad igual a 0
+            const filteredPizzas = newPizzas.filter(pizza => pizza.cantidad !== 0);
+            // Actualizamos el estado de la matriz de pizzas
+            setSeleccionadas(filteredPizzas);
+        }  
     }
     //Función que imprime los registros de las pizzas seleccionadas y permite aumentar o disminuir la cantidad de pizzas seleccionadas.
     const imprimir_carro = () => {
